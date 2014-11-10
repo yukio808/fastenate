@@ -24,8 +24,8 @@ Commit often, you may create additional feature branches and use them for practi
 ## Advanced Mode:
 1. Add fancy animations with CSS3 properties
   * http://css3.bradshawenterprises.com/transitions/
-  * http://tympanus.net/Tutorials/OriginalHoverEffects/index.html
-  * http://tympanus.net/codrops/2013/08/06/creative-link-effects/
+  * http://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ (click 'view demo' for the demo!)
+  * http://tympanus.net/codrops/2013/08/06/creative-link-effects/ (click 'view demo' for the demo!)
   
 1. add a dropdown nav as a child element of one of the main nag items. Style it at different media queries (you need non-hover versions for tablet and mobile sizes)
 
