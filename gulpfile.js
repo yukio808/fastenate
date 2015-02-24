@@ -26,4 +26,20 @@ gulp.task('html', function (){
     .pipe(connect.reload());
 });
 
-gulp.task('default', ['compile-sass', 'watch-files']);
+gulp.task('public-server', function (){
+  return connect.server({
+    root: './public',
+    port: 8080,
+    livereload: true
+  });
+});
+
+gulp.task('data-server', function (){
+  return connect.server({
+    root: './server',
+    port: 9090,
+    livereload: false
+  });
+});
+
+gulp.task('default', ['compile-sass', 'watch-files', 'public-server', 'data-server']);
