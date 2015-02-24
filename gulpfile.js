@@ -9,7 +9,7 @@ var PathTo = {
 };
 
 gulp.task('watch-files', function (){
-  gulp.watch()
+  gulp.watch(PathTo.Sass, ['compile-sass']);
 });
 
 gulp.task('compile-sass', function (){
@@ -19,4 +19,4 @@ gulp.task('compile-sass', function (){
           .pipe(gulp.dest(PathTo.PublicCss));
 });
 
-gulp.task('default', ['compile-sass'])
+gulp.task('default', ['compile-sass', 'watch-files'])
