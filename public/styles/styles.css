@@ -2736,6 +2736,9 @@ body {
   margin: 0px;
   background-image: url('/assets/bg.jpg');
   font-family: 'Oswald', 'sans-serif'; }
+  @media only screen and (max-width: 760px) {
+    body {
+      min-width: 521px; } }
   body .header {
     text-align: center;
     background-color: #FFFFFF;

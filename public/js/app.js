@@ -1,8 +1,30 @@
+
 $( document ).ready(function (){
   var data;
     // all of the selectors needed for the page
   $.getJSON('/api/random.json', function(data){
     var posts = data.data.children;
+    for(var i = 0; i < posts.length; i++){
+      renderPost(posts[i].data);
+      // console.log(posts[i].data);
+    }
+  });
+  $.getJSON('http://www.reddit.com/r/pics.json', function(data){
+    var posts= data.data.children;
+    for(var i = 0; i < posts.length; i++){
+      renderPost(posts[i].data);
+      // console.log(posts[i].data);
+    }
+  });
+    $.getJSON('http://www.reddit.com/r/pimpcats.json', function(data){
+    var posts= data.data.children;
+    for(var i = 0; i < posts.length; i++){
+      renderPost(posts[i].data);
+      // console.log(posts[i].data);
+    }
+  });
+      $.getJSON('http://www.reddit.com/r/EarthPorn.json', function(data){
+    var posts= data.data.children;
     for(var i = 0; i < posts.length; i++){
       renderPost(posts[i].data);
       // console.log(posts[i].data);

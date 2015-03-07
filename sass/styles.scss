@@ -13,6 +13,9 @@ body {
   margin: 0px;
   background-image: url('/assets/bg.jpg');
   font-family: 'Oswald', 'sans-serif';
+  @media #{$small-only} {
+    min-width: 521px;
+  }
   .header{
     text-align: center;
     background-color: $white;
