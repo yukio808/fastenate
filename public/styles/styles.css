@@ -2859,6 +2859,7 @@ body {
       body .main_content {
         max-width: 900px; } }
     body .main_content .page {
+      overflow: hidden;
       width: 420px;
       padding: 20px;
       float: left;
@@ -2913,15 +2914,18 @@ body {
             margin-left: 8px; }
       body .main_content .page .article {
         font-family: 'Lato';
-        padding-bottom: 20px; }
-        @media only screen and (min-width:761px) {
-          body .main_content .page .article p {
-            max-height: 80px;
-            overflow: hidden; } }
-        @media only screen and (max-width: 760px) {
-          body .main_content .page .article p {
-            max-height: 80px;
-            overflow: hidden; } }
+        padding-bottom: 20px;
+        overflow: hidden; }
+        body .main_content .page .article p {
+          overflow: hidden; }
+          @media only screen and (min-width:761px) {
+            body .main_content .page .article p {
+              max-height: 80px;
+              overflow: hidden; } }
+          @media only screen and (max-width: 760px) {
+            body .main_content .page .article p {
+              max-height: 80px;
+              overflow: hidden; } }
   body footer {
     visibility: hidden; }
     @media only screen and (min-width:761px) {
