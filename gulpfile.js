@@ -47,4 +47,5 @@ gulp.task('public-server', function (){
   });
 });
 
+gulp.task('production', ['public-server']);
 gulp.task('default', ['public-server', 'compile-sass', 'watch-files']);
